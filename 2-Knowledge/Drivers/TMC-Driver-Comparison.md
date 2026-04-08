@@ -191,12 +191,12 @@ Start
 
 ## BOM Complexity Comparison
 
-| IC | External power components | Sense components | Feedback components | Total external passives (approx.) |
-|---|---|---|---|---|
-| TMC2209 | None (integrated FETs) | 2× sense resistors (optional: internal RDS(ON)) | None required | ~10 (caps, VREF resistor) |
-| TMC2240 | None (integrated FETs) | RREF resistor only (ICS) | Optional encoder connector | ~8 (caps, RREF) |
-| TMC5160A | 8× external MOSFETs + bootstrap caps | 2× Kelvin sense resistors | Optional encoder connector | ~25 (MOSFETs, caps, resistors) |
-| TMC4671-LA | Full power stage (gate driver + MOSFETs) | Shunt resistors + amplifier ICs | Encoder or Hall sensor (mandatory) | ~40+ (power stage, amplifiers, sensors, caps) |
+| IC         | External power components                | Sense components                                | Feedback components                | Total external passives (approx.)             |
+| ---------- | ---------------------------------------- | ----------------------------------------------- | ---------------------------------- | --------------------------------------------- |
+| TMC2209    | None (integrated FETs)                   | 2× sense resistors (optional: internal RDS(ON)) | None required                      | ~10 (caps, VREF resistor)                     |
+| TMC2240    | None (integrated FETs)                   | RREF resistor only (ICS)                        | Optional encoder connector         | ~8 (caps, RREF)                               |
+| TMC5160A   | 8× external MOSFETs + bootstrap caps     | 2× Kelvin sense resistors                       | Optional encoder connector         | ~25 (MOSFETs, caps, resistors)                |
+| TMC4671-LA | Full power stage (gate driver + MOSFETs) | Shunt resistors + amplifier ICs                 | Encoder or Hall sensor (mandatory) | ~40+ (power stage, amplifiers, sensors, caps) |
 
 ---
 
