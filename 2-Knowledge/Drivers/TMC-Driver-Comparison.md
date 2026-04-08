@@ -5,7 +5,7 @@
 **Tags:** #drivers #hardware #reference #comparison
 **Status:** draft
 **Updated:** 2026-04-08
-**Related:** [[TMC2209]], [[TMC2240]], [[TMC5160A]], [[TMC4671-LA]]
+**Related:** [[TMC2209]], [[TMC2240]], [[TMC5160A]], [[TMC4671-LA]], [[AN-001-SpreadCycle-Parameterization]], [[AN-002-StallGuard2-CoolStep]], [[AN-003-dcStep]], [[AN-015-StealthChop-Performance]]
 
 ---
 
@@ -215,4 +215,5 @@ Start
 - TMC2240 Datasheet (Trinamic/Analog Devices)
 - TMC5160A Datasheet Rev 1.17 (Trinamic/Analog Devices)
 - TMC4671-LA Datasheet Rev 2.08 (Trinamic/Analog Devices, 2022)
+- Trinamic application notes: [[AN-001-SpreadCycle-Parameterization]], [[AN-002-StallGuard2-CoolStep]], [[AN-003-dcStep]], [[AN-015-StealthChop-Performance]], [[AN-026-Adaptive-Microstep-Table]], [[AN-064-TMC4671-Linear-Motor]]
 - Individual wiki pages: [[TMC2209]], [[TMC2240]], [[TMC5160A]], [[TMC4671-LA]]
