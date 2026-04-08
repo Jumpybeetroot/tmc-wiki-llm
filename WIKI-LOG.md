@@ -35,3 +35,5 @@ Append-only log of significant changes to the wiki. Each entry captures what cha
 ## [2026-04-08] ingest | AN-026 → 2-Knowledge/Drivers/AN-026-Adaptive-Microstep-Table.md (custom microstep waveform optimization, laser pointer calibration, incremental encoding scheme)
 ## [2026-04-08] ingest | AN-064 → 2-Knowledge/Drivers/AN-064-TMC4671-Linear-Motor.md (TMC4671 FOC for linear motors, ABN encoder PPR, register config, linear scaling)
 ## [2026-04-08] revise | klipper_tmc_autotune.md — traced empirical constants (1.46, 374, 248×32) to AN-001 register encoding and sinusoidal averaging derivation; replaced speculative app note citations with verified derivations
+## [2026-04-08] ingest | k4671 firmware → 2-Knowledge/Software/k4671.md (Rust/Embassy TMC4671 FOC firmware for Kalico, USB CDC, Anchor protocol, software feedforward, from andrewmcgr/k4671)
+## [2026-04-08] create | k4671 feedforward → 2-Knowledge/Control-Theory/k4671-Feedforward.md (dedicated: three-term software FF, saturation nonlinearity, PidTorqueFluxOffset injection, tuning guidance)

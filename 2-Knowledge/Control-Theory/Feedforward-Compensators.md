@@ -6,7 +6,7 @@
 **Status:** draft
 **Updated:** 2026-04-08
 **Source:** Montoya-Ríos et al., "Simple Tuning Rules for Feedforward Compensators," Agronomy 2020; Simple_Tuning_Rules_for_Feedforward_Compensators_A.pdf; Guzmán & Hägglund, JPC 2011
-**Related:** [[PID-Tuning-Methods]], [[SIMC-PID-Tuning]]
+**Related:** [[PID-Tuning-Methods]], [[SIMC-PID-Tuning]], [[k4671-Feedforward]]
 
 ---
 

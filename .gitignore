@@ -8,6 +8,9 @@
 _output/*
 !_output/README.md
 
+# Cloned source repos (reference material, not wiki content)
+k4671/
+
 # Environment and secrets
 .env
 .env.*

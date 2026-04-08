@@ -29,4 +29,5 @@
 - Primary tooling: OhMyOpenCode, Opencode
 - Ingestion agent: Gemini 3 via GitHub Copilot
 - Browsing: Obsidian and Opencode
+- PDF ingestion: docling (available locally); use `--image-export-mode referenced` to export images as PNGs rather than embedding base64
 - OS: macOS (darwin)
