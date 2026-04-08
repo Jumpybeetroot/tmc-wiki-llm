@@ -12,7 +12,7 @@
 
 ## Overview
 
-The k4671 firmware implements feedforward control entirely in software because the TMC4671's built-in feedforward hardware is non-functional — it was broken in the -LA silicon revision and not included in production chips. The implementation computes a three-term error signal from position delta, velocity error, and torque error — applies saturation-based normalization — and writes a torque offset to the TMC4671's `PidTorqueFluxOffset` register at every control loop iteration.
+The k4671 firmware implements feedforward control entirely in software because the TMC4671's built-in feedforward hardware is unavailable — it was broken in engineering samples and removed from the TMC4671-LA, which is the production revision. The implementation computes a three-term error signal from position delta, velocity error, and torque error — applies saturation-based normalization — and writes a torque offset to the TMC4671's `PidTorqueFluxOffset` register at every control loop iteration.
 
 This contrasts with the theoretical feedforward treatment in [[Feedforward-Compensators]], which describes ideal inverse-model and lead-lag filter approaches. The k4671 implementation is a practical, heuristic compensator designed for the specific constraints of the TMC4671 + Klipper architecture. The code references [MDPI Actuators 12(1):31, 2023](https://www.mdpi.com/2076-0825/12/1/31) as the design inspiration.
 
@@ -160,7 +160,7 @@ The registers remain defined in `registers.rs` (matching the datasheet) but cann
 | Nonlinearity | Saturation function sat(0.1) | Linear (gain × signal) |
 | Update rate | Software loop frequency | Hardware (PWM frequency, ~143 kHz) |
 | Latency | Software loop + SPI write | Near-zero (internal) |
-| Availability | ✓ Working | ✗ Non-functional on -LA and production silicon |
+| Availability | ✓ Working | ✗ Broken in engineering samples; removed from -LA (production) |
 
 ### Why Software?
 
@@ -174,7 +174,7 @@ The hardware feedforward is unavailable on production TMC4671 chips, making soft
 
 - **Latency:** Software FF runs at the MCU loop rate (slower than the TMC4671's internal ~143 kHz), introducing at least one loop-period delay
 - **Jitter:** Software execution time varies; hardware FF would be deterministic at the PWM level
-- **Observability:** The code has `trace!` logging of `ff_error` and `torque_offset` for debugging; the TMC4671's `InterimFfVelocity`/`InterimFfTorque` interim registers exist in the register map but their functionality on production silicon is unverified
+- **Observability:** The code has `trace!` logging of `ff_error` and `torque_offset` for debugging; the TMC4671's `InterimFfVelocity`/`InterimFfTorque` interim registers exist in the register map but were removed along with the feedforward hardware in the -LA revision
 
 ---
 
@@ -227,7 +227,7 @@ The k4671 approach is more heuristic than model-based. It uses feedback errors (
 2. **Configurable sat() threshold** — the hardcoded 0.1 limits tuning flexibility
 3. **Commanded velocity/acceleration FF** — add setpoint-derivative terms (classical feedforward) alongside the error-based terms
 
-Note: switching to hardware feedforward registers is not an option — the TMC4671 hardware FF block is non-functional on -LA and production silicon.
+Note: switching to hardware feedforward registers is not an option — the TMC4671 hardware FF block was broken in engineering samples and removed from the -LA production revision.
 
 ---
 
