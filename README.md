@@ -405,7 +405,7 @@ The goal is a system that grows from the collective experience of its users - a 
 ## Credits
 
 - **Pattern foundation:** [Andrej Karpathy's LLM Wiki Pattern](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
-- **Implementation:** Built from patterns developed by  [Ariel Sakin](https://github.com/ArielSakin), a personal operating system for personal knowledge management, refined over several months of daily use
+- **Implementation:** Built from patterns developed by [Ariel Sakin](https://github.com/asakin), a personal operating system for personal knowledge management, refined over several months of daily use
 - **Standard:** The metadata standard extends Karpathy's pattern with structured types, tags, and status fields for operational knowledge management
 
 ---
