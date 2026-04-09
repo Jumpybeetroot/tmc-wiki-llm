@@ -6,7 +6,7 @@
 **Status:** draft
 **Updated:** 2026-04-08
 **Source:** Skogestad & Grimholt, "The SIMC Method for Smooth PID Controller Tuning," PID Control in the Third Millennium, Springer 2012; pidbook-chapter5.pdf; improved-simc-method-for-pi-controller-tuning.pdf
-**Related:** [[PID-Tuning-Methods]], [[Feedforward-Compensators]]
+**Related:** [[PID-Tuning-Methods]], [[Direct-Synthesis-PID]], [[Feedforward-Compensators]]
 
 ---
 

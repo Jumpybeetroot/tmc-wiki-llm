@@ -6,7 +6,7 @@
 **Status:** draft
 **Updated:** 2026-04-08
 **Source:** pidbook-chapter5.pdf (Skogestad & Grimholt 2012); Åström & Hägglund 2006
-**Related:** [[SIMC-PID-Tuning]], [[Feedforward-Compensators]]
+**Related:** [[SIMC-PID-Tuning]], [[Direct-Synthesis-PID]], [[Feedforward-Compensators]]
 
 ---
 
@@ -207,6 +207,8 @@ SIMC is a specific application of direct synthesis: the desired response is a fi
 
 **Pros:** Rigorous, principled.
 **Cons:** Requires accurate plant model. Can produce non-standard controller structures.
+
+For time-delayed systems, the key difficulty is handling e^(-theta*s). Most DS methods approximate it with Taylor or Pade expansions, introducing error that grows with the delay ratio theta/tau. Kula (2024) solves this exactly via root-locus analysis, finding the critical-damping gain Kp = T/(K*theta*e) -- see [[Direct-Synthesis-PID]] for details.
 
 ## Performance/Robustness Tradeoff
 
