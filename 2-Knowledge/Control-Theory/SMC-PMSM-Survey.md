@@ -6,7 +6,7 @@
 **Status:** draft
 **Updated:** 2026-04-09
 **Source:** Badamasi, Mubarak & Ali Nasir, "SMC-based PMSM Speed Control: A Comprehensive Review and Taxonomy (2020–2025)," arXiv:2510.18420v1, 2025. KFUPM, Saudi Arabia.
-**Related:** [[Sliding-Mode-Control]], [[PID-Tuning-Methods]], [[Feedforward-Compensators]]
+**Related:** [[Sliding-Mode-Control]], [[PID-Tuning-Methods]], [[Feedforward-Compensators]], [[SMC-PI-Cascade]], [[GESO-SMC-RL-Feed]]
 
 ---
 

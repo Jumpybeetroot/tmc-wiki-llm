@@ -7,7 +7,7 @@
 **Updated:** 2026-04-08
 **Source:** Yu et al., "Sliding Mode Control for PMLSM Position Control — A Review," Actuators 12(1), 2023; sliding-mode-control-for-pmlsm-position-control-a-review.pdf
 **See also:** [[SMC-PMSM-Survey]] — complementary 2020–2025 systematic review of SMC for rotary PMSM speed control (Badamasi & Nasir 2025)
-**Related:** [[PID-Tuning-Methods]], [[SIMC-PID-Tuning]], [[TMC4671-LA]], [[SMC-PMSM-Survey]]
+**Related:** [[PID-Tuning-Methods]], [[SIMC-PID-Tuning]], [[TMC4671-LA]], [[SMC-PMSM-Survey]], [[SMC-PI-Cascade]], [[GESO-SMC-RL-Feed]]
 
 ---
 

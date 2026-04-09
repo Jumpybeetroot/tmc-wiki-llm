@@ -4,7 +4,7 @@
 **Summary:** Motor control theory — microstepping, current chopping, PID control, S-curve acceleration, back-EMF, and related concepts.
 **Tags:** #control-theory #motion #reference
 **Status:** active
-**Updated:** 2026-04-08
+**Updated:** 2026-04-09
 
 ---
 
@@ -19,3 +19,5 @@ This directory contains knowledge articles on stepper motor control theory, algo
 - [[SMC-PMSM-Survey]] — Systematic review of SMC for PMSM speed control (2020–2025). Six-family taxonomy, 66 cataloged papers, computational cost analysis, research gaps.
 - [[k4671-Feedforward]] — Dedicated feedforward implementation in k4671 firmware. Three-term software FF, saturation nonlinearity, PidTorqueFluxOffset injection.
 - [[Direct-Synthesis-PID]] — Kula 2024: exact root-locus-based DS method for PI/PID tuning of time-delayed plants. No Taylor/Pade approximation — guarantees non-oscillatory response.
+- [[SMC-PI-Cascade]] — Neubauer et al. 2024: cascaded SMC-PI position control for elastic feed drives. Single tuning parameter λ, 76% tracking error reduction vs P-PI.
+- [[GESO-SMC-RL-Feed]] — Wang et al. 2024: SMC with generalized extended state observer (matched + mismatched disturbances) and DCDDPG reinforcement learning for observer tuning. TDMS feed system, 69% tracking improvement.
