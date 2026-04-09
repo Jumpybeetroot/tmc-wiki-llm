@@ -16,3 +16,5 @@ This directory contains knowledge articles on stepper motor control theory, algo
 - [[SIMC-PID-Tuning]] — Skogestad's SIMC method for PI/PID tuning. Model-based, single tuning parameter τc, analytically derived from FOPDT.
 - [[Sliding-Mode-Control]] — Sliding mode control theory and application to linear/rotary motors. Robust nonlinear control with chattering mitigation.
 - [[Feedforward-Compensators]] — Feedforward compensator design for motion control. Velocity/acceleration feedforward, IMC-based design, combined FB+FF architecture.
+- [[SMC-PMSM-Survey]] — Systematic review of SMC for PMSM speed control (2020–2025). Six-family taxonomy, 66 cataloged papers, computational cost analysis, research gaps.
+- [[k4671-Feedforward]] — Dedicated feedforward implementation in k4671 firmware. Three-term software FF, saturation nonlinearity, PidTorqueFluxOffset injection.

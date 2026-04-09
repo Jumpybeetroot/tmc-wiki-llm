@@ -37,3 +37,4 @@ Append-only log of significant changes to the wiki. Each entry captures what cha
 ## [2026-04-08] revise | klipper_tmc_autotune.md — traced empirical constants (1.46, 374, 248×32) to AN-001 register encoding and sinusoidal averaging derivation; replaced speculative app note citations with verified derivations
 ## [2026-04-08] ingest | k4671 firmware → 2-Knowledge/Software/k4671.md (Rust/Embassy TMC4671 FOC firmware for Kalico, USB CDC, Anchor protocol, software feedforward, from andrewmcgr/k4671)
 ## [2026-04-08] create | k4671 feedforward → 2-Knowledge/Control-Theory/k4671-Feedforward.md (dedicated: three-term software FF, saturation nonlinearity, PidTorqueFluxOffset injection, tuning guidance)
+## [2026-04-09] ingest | SMC-PMSM survey → 2-Knowledge/Control-Theory/SMC-PMSM-Survey.md (Badamasi & Nasir 2025; 66-paper systematic review of SMC for PMSM speed control 2020–2025, six-family taxonomy, computational cost analysis, research gaps)
