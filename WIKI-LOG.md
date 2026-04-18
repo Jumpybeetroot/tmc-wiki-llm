@@ -41,3 +41,12 @@ Append-only log of significant changes to the wiki. Each entry captures what cha
 ## [2026-04-09] ingest | Kula 2024 → 2-Knowledge/Control-Theory/Direct-Synthesis-PID.md (root-locus-based direct synthesis for PI/PID tuning of FOPDT/SOPDT plants, exact non-oscillatory response, Kp=T/(K·θ·e) formula)
 ## [2026-04-09] ingest | Neubauer et al. 2024 → 2-Knowledge/Control-Theory/SMC-PI-Cascade.md (cascaded SMC-PI position control for elastic feed drives; single tuning parameter λ, PT2·I plant model, Kalman-estimated acceleration; 76% tracking error reduction, 58% disturbance rejection improvement vs P-PI)
 ## [2026-04-09] ingest | Wang et al. 2024 → 2-Knowledge/Control-Theory/GESO-SMC-RL-Feed.md (SMC with generalized ESO for matched+mismatched disturbances + DCDDPG RL for observer gain tuning; TDMS feed system avoids low-speed crawling; 2.1 μm avg tracking, 69% improvement vs PID+FC, 82.6% friction observation improvement)
+## [2026-04-17] health | Wiki health check
+- Total pages: 28 (in 2-Knowledge)
+- Broken links: 0 (fixed 1 in klipper_tmc_autotune.md)
+- Orphans: 0
+- Contradictions: 0
+- Stale pages: 0
+- Health score: 98/100 (-2 for qmd index mismatch)
+## [2026-04-17] create | FOC synthesis page → 2-Knowledge/Control-Theory/FOC.md (synthesis of FOC theory, d-q frame modeling, stepper-as-PMSM mapping, hardware/software implementation references)
+## [2026-04-18] update | k4671 feedforward → added Sliding Mode Control (SMC) relationship section (CSMC boundary layer mapping)

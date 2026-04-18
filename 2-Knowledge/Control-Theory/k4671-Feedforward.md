@@ -194,6 +194,16 @@ The k4671 approach is more heuristic than model-based. It uses feedback errors (
 
 ---
 
+## Relationship to Sliding Mode Control
+
+While it functions as a feedforward compensator, the k4671 implementation is directly inspired by sliding mode control (SMC) research (specifically Yu et al. 2023). Within the taxonomy of SMC families (CSMC, TSMC, ISMC, HOSMC, ASMC, FOSMC), the k4671 approach maps to the **Boundary Layer approach** of **Conventional Sliding Mode Control (CSMC)**.
+
+- **Saturation Function vs. Sign Function:** Instead of using a pure discontinuous switching function `sgn(x)`—which causes severe high-frequency chattering—the k4671 firmware uses a saturation nonlinearity `sat(x, 0.1)`. 
+- **Soft-Limiting:** The saturation effectively creates a "soft" switching law (a boundary layer) that provides linear proportional control within the `±0.1` threshold band and clamps to `±1` outside of it.
+- **Disturbance Compensation:** By combining position, velocity, and torque errors into this saturation-based reaching law and injecting it as a torque offset, the k4671 implementation acts as a robust sliding mode disturbance compensator.
+
+---
+
 ## Tuning Guidance
 
 ### Initial Setup
